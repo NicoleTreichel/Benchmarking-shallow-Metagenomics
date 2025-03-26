@@ -1,6 +1,6 @@
 # Benchmarking Shallow Metagenomics - UNDER CONSTRUCTION
 
-This GitHub repository describes the workflow used for benchmarking shallow shotgun metagenomic sequencing of bacterial DNA Mock communities in Treichel et al. (*add bioRxiv link*).
+This GitHub repository describes the workflow used for benchmarking shallow metagenomic sequencing of Mock communities (DNA mixtures), as described in Treichel et al. (*add bioRxiv link*).
 
 ## Background
 With this study we aimed to systematically assess the threshold of sequencing depth necessary for the read-outs of taxonomic analysis, functional genes and pathways, and MAG construction. We used two complex mixtures of DNA from cultured gut bacteria. An evenly distributed Mock community containing DNA of 70 strains and one with staggered distribution containing DNA of 24 strains. Analysis was done at nine sequencing depths (0.1, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 5.0, and 10.0 Gb). Additionally, library preparation was performed in two facilities and the effect of background DNA was tested. 
