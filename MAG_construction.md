@@ -17,7 +17,7 @@ done
 
 ## 2. Map reads to contigs: Bowtie2
 
-Build depth table for files containing contigs > 1000 bp
+Build Bowtie index from files containing contigs > 1000 bp
 ```
 for fasta_file in *_1000rm.fasta ; do
   output_fasta_file="$(basename -s _1000rm.fasta $fasta_file)"
@@ -27,7 +27,7 @@ done
 
 List the names of the samples in a file (sample_list.txt).
 
-Align the paired end reads to bowtie index/depth table of contigs.
+Align the paired end reads to Bowtie index of contigs:
 
 ```
 conda activate Biobakery
@@ -37,7 +37,7 @@ for sample_name in $(cat sample_list.txt) ; do
 done
 ```
 
-Sort bam files
+Sort BAM files:
 ```
 for file in *.unsorted.bam ; do
     sample_name="$(basename -s .unsorted.bam $file)"
@@ -45,8 +45,11 @@ for file in *.unsorted.bam ; do
 done
 ```
 
-## 3. Binning using Metabat2
+## 3. Binning using MetaBAT2
 
+Biobakery can be installed via conda as described [here](https://github.com/biobakery/conda-biobakery)
+
+Move unsorted bam files to subfolder:
 ```
 conda activate Biobakery
 
@@ -54,7 +57,7 @@ mkdir Unsorted_bam_files
 mv *.unsorted.bam Unsorted_bam_files
 ```
 
-
+Run `jgi_summarize_bam_contig_depths` script of MetaBAT2 to calculate the coverage of the BAM files: 
 ```
 for file in *.bam ; do
     sample_name="$(basename -s .bam $file)"
@@ -62,7 +65,7 @@ for file in *.bam ; do
 done
 ```
 
-Create bins
+Create bins:
 ```
 for file in *_1000rm.fasta ; do
     sample_name="$(basename -s _1000rm.fasta $file)"
@@ -93,5 +96,9 @@ gtdbtk classify_wf --extension fa --mash_db Gtdb_mash_db --cpus 30 --genome_dir 
 
 ## 6. Alignment of MAGs to reference genomes
 
+MAGs were aligned to reference Genomes using `blastn`.
 
-
+```
+blastn -query CM-even_sub10Gb_bin.54.fa -subject /Reference_Genomes/Veillonella_intestinalis_CLA-AV-13.fa -evalue 1e-10 -perc_identity 90.0 -outfmt 6 -out Blastn_CM-even_sub10Gb_bin.54_Veillonella_intestinalis_CLA-AV-13.txt
+```
+For visualisation of alignmets [shinyCircos](https://venyao.xyz/shinyCircos-V1/) was used.
