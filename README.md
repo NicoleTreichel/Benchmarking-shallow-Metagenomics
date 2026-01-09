@@ -29,7 +29,7 @@ With this study we aimed to systematically assess the threshold of sequencing de
 
    
 ## Graphical overview
-![Workflow overview](https://github.com/NicoleTreichel/Benchmarking-shallow-Metagenomics/blob/main/Workflow.png)
+![Workflow overview](https://github.com/NicoleTreichel/Benchmarking-shallow-Metagenomics/blob/main/Workflow_Overview.png)
 
 ## Installation / Requirements
 For installation of the required tools please visite their original websites linked above.
