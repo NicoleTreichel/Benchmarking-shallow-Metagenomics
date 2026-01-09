@@ -54,7 +54,7 @@ done
 - Detailed information of the CoverM parameters use can be found [here](https://github.com/wwood/CoverM?tab=readme-ov-file#usage)
 
 
-## 2. Taxonomic profile analysis with MetaPhlAn
+## 3. Taxonomic profile analysis with MetaPhlAn
 Biobakery can be installed via conda as described [here](https://github.com/biobakery/conda-biobakery)
 
 Input files are the pre-processed samples (quality filtered and phiX removed)
