@@ -95,5 +95,3 @@ Run KEGG-decoder:
 KEGG-decoder --input All_Kofam_results_combined --output Kofam_results_combined_OUT.list --vizoption static
 ```
 
-*add example of heatmap*
-
