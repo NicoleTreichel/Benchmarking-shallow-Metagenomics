@@ -39,7 +39,7 @@ seqtk sample -s100 Mock-9_R2.fastq.gz 16666667 > Mock_sub5Gb_R2.fastq
 
 ## Quality-filtering, phiX removal and contig assembly by MegaHit
 
-*export conda environment Genome_env and upload here*
+conda environment exported as yaml: [Genome_env.yaml](https://github.com/NicoleTreichel/Benchmarking-shallow-Metagenomics/blob/main/Long_read_sequencing/Genome_env.yaml)
 
 ```
 conda activate Genome_env 
