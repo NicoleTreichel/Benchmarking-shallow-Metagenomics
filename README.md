@@ -1,6 +1,6 @@
 # Benchmarking Shallow Metagenomics
 
-This GitHub repository describes the workflow used for benchmarking shallow metagenomic sequencing of Mock communities (DNA mixtures), as described in Treichel et al. ([bioRxiv](https://www.biorxiv.org/content/10.1101/2025.03.27.645659v1)).
+This GitHub repository describes the workflow used for benchmarking shallow metagenomic sequencing of Mock communities (DNA mixtures), as described in [Treichel et al. 2026](https://doi.org/10.1038/s41564-026-02334-2)
 
 ## Background
 With this study we aimed to systematically assess the threshold of sequencing depth necessary for the read-outs of taxonomic analysis, functional genes and pathways, and MAG construction. We used three complex mixtures of DNA from cultured gut bacteria. An evenly distributed Mock community containing DNA of 70 strains, and two with staggered distributions, containing either DNA of 24 strains, or 70 strains. Analysis was done at up to 11 sequencing depths (0.1, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 5.0, 10.0, 20.0 and 50.0 Gb). Additionally, library preparation was performed in two facilities and the effect of background DNA was tested. Furthermore long-read sequencing at a third facility was included for analysis of MAG construction. For analysis of the effect of multi-coverage binning on MAG construction, 10 Mock communities containing DNA of 24 strains in different distributions were generated and sequenced at 10 Gb each.
@@ -46,4 +46,4 @@ For installation of the required tools please visite their original websites lin
 Metagenomic data has be deposited at the European Nucleotide Archive/NCBI and is accessible under Project no. PRJEB83573. 
 
 ## Publication
-Treichel et al. [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.03.27.645659v1)
+Treichel et al. Benchmarking of shotgun sequencing depth reveals the potential and limitations of shallow metagenomics and strain-level analysis. Nat Microbiol (2026). [doi.org/10.1038/s41564-026-02334-2](https://doi.org/10.1038/s41564-026-02334-2)
